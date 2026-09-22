@@ -1,0 +1,30 @@
+name: Обновить сайт после редактирования
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'dist/media/**'
+      - 'scripts/build.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/build.mjs
+      - name: Сохранить обновлённые HTML-страницы
+        run: |
+          git config user.name "Jomart Jurek Site Bot"
+          git config user.email "info@jomart-jurek.org"
+          git add dist
+          git diff --cached --quiet || git commit -m "Обновить сайт из панели управления"
+          git push
