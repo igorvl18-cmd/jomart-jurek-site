@@ -1,0 +1,88 @@
+media:
+  input: dist/media
+  output: /media
+  rename: safe
+  extensions: [jpg, jpeg, png, webp, gif, svg]
+
+content:
+  - name: main_texts
+    label: Основные тексты сайта
+    type: file
+    path: data/content.json
+    format: json
+    fields:
+      - name: ru
+        label: Русская версия
+        type: object
+        fields: &language_fields
+          - { name: hero_title, label: Заголовок главной страницы, type: string, required: true }
+          - { name: hero_text, label: Вводный текст, type: text, required: true }
+          - { name: about_title, label: Заголовок «О нас», type: string, required: true }
+          - { name: about_text, label: Вводный текст «О нас», type: text, required: true }
+          - { name: projects_title, label: Заголовок проектов, type: string, required: true }
+          - { name: projects_text, label: Вводный текст проектов, type: text, required: true }
+          - { name: house_title, label: Заголовок Дома, type: string, required: true }
+          - { name: house_text, label: Вводный текст Дома, type: text, required: true }
+          - { name: help_title, label: Заголовок помощи, type: string, required: true }
+          - { name: help_text, label: Вводный текст помощи, type: text, required: true }
+          - { name: contacts_title, label: Заголовок контактов, type: string, required: true }
+          - { name: contacts_text, label: Вводный текст контактов, type: text, required: true }
+      - name: kk
+        label: Қазақша нұсқа
+        type: object
+        fields: *language_fields
+      - name: en
+        label: English version
+        type: object
+        fields: *language_fields
+  - name: gallery
+    label: Фотогалерея
+    type: file
+    path: data/gallery.json
+    format: json
+    list: true
+    fields:
+      - name: image
+        label: Фотография
+        type: image
+        required: true
+      - { name: alt_ru, label: Описание фотографии на русском, type: string, required: true }
+      - { name: alt_kk, label: Қазақша сипаттама, type: string, required: true }
+      - { name: alt_en, label: English description, type: string, required: true }
+
+settings:
+  content:
+    merge: direct
+  commit:
+    identity: user
+*** Add File: /workspace/scratch/46ad4c9d6c3b/jomart-site/.github/workflows/rebuild.yml
+name: Обновить сайт после редактирования
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/**'
+      - 'dist/media/**'
+      - 'scripts/build.mjs'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node scripts/build.mjs
+      - name: Сохранить обновлённые HTML-страницы
+        run: |
+          git config user.name "Jomart Jurek Site Bot"
+          git config user.email "info@jomart-jurek.org"
+          git add dist
+          git diff --cached --quiet || git commit -m "Обновить сайт из панели управления"
+          git push
