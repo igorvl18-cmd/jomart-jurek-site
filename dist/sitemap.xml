@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://jomart-jurek.org/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://jomart-jurek.org/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://jomart-jurek.org/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jomart-jurek.org/english/"/>
+  </url>
+  <url>
+    <loc>https://jomart-jurek.org/kz/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://jomart-jurek.org/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://jomart-jurek.org/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jomart-jurek.org/english/"/>
+  </url>
+  <url>
+    <loc>https://jomart-jurek.org/english/</loc>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://jomart-jurek.org/"/>
+    <xhtml:link rel="alternate" hreflang="kk" href="https://jomart-jurek.org/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://jomart-jurek.org/english/"/>
+  </url>
+</urlset>
