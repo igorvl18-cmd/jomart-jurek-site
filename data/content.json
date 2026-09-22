@@ -1,0 +1,44 @@
+{
+  "ru": {
+    "hero_title": "Jomart Jurek — «Щедрое сердце»",
+    "hero_text": "Общественное объединение, созданное для поддержки людей с инвалидностью. Вместе мы открываем возможности, делаем жизнь добрее и дарим надежду.",
+    "about_title": "Мы верим, что возможности должны быть у каждого",
+    "about_text": "Jomart Jurek — это сообщество людей, которых объединяют поддержка, уважение и стремление делать жизнь добрее.",
+    "projects_title": "Делаем добрые дела вместе",
+    "projects_text": "Мы организуем мероприятия для людей с инвалидностью и детей, помогаем тем, кто оказался в сложной ситуации, создаём пространство для общения, дружбы, творчества, спорта и активной жизни.",
+    "house_title": "Дом «Щедрое сердце»",
+    "house_text": "Мы мечтаем создать в Караганде тёплый, доступный и живой центр для людей с инвалидностью — место, куда хочется приходить, где можно общаться, учиться, заниматься спортом, находить друзей и раскрывать свои способности.",
+    "help_title": "Станьте частью доброго дела",
+    "help_text": "Ваша поддержка помогает Jomart Jurek проводить мероприятия, помогать людям с инвалидностью и приближать создание Дома «Щедрое сердце».",
+    "contacts_title": "Свяжитесь с нами",
+    "contacts_text": "Мы открыты для общения, сотрудничества и добрых инициатив. Каждое обращение важно для нас."
+  },
+  "kk": {
+    "hero_title": "Jomart Jurek «Жомарт жүрек»",
+    "hero_text": "Мүгедектігі бар адамдарға қолдау көрсету үшін құрылған қоғамдық бірлестік. Бірге мүмкіндіктер ашып, өмірді жақсартамыз, үміт сыйлаймыз.",
+    "about_title": "Әр адамға мүмкіндік берілуі тиіс деп сенеміз",
+    "about_text": "Jomart Jurek — өзара қолдау, құрмет және өмірге жақсылық әкелу ниеті біріктірген қауымдастық.",
+    "projects_title": "Игі істерді бірге атқарайық",
+    "projects_text": "Біз мүгедектігі бар адамдар мен балаларға арналған іс-шаралар ұйымдастырамыз, қиын жағдайға тап болған жандарға көмектесеміз. Қарым-қатынасқа, достыққа, шығармашылыққа, спортқа және белсенді өмірге жағдай жасаймыз.",
+    "house_title": "«Жомарт жүрек» үйі",
+    "house_text": "Біз Қарағандыда мүгедектігі бар адамдарға арналған жайлы әрі қолжетімді, белсенді өмірге жағдай жасайтын орталық құруды армандаймыз.",
+    "help_title": "Игі іске үлес қосыңыз",
+    "help_text": "Jomart Jurek ұйымына көрсеткен қолдауыңыз іс-шаралар өткізуге, мүгедектігі бар адамдарға көмектесуге және «Жомарт жүрек» үйін құруға жақындай түсуге мүмкіндік береді.",
+    "contacts_title": "Бізбен байланысыңыз",
+    "contacts_text": "Біз қарым-қатынасқа, ынтымақтастыққа және игі бастамаларға әрдайым ашықпыз. Әр өтініш біз үшін маңызды."
+  },
+  "en": {
+    "hero_title": "Jomart Jurek — Generous Heart",
+    "hero_text": "A public association created to support persons with disabilities. Together we open opportunities, make life kinder and give hope.",
+    "about_title": "We believe everyone deserves opportunities",
+    "about_text": "Jomart Jurek is a community united by support, respect and the desire to make life kinder.",
+    "projects_title": "Doing good together",
+    "projects_text": "We organise activities for persons with disabilities and children, help people facing difficult circumstances and create opportunities for friendship, creativity, sport and active participation.",
+    "house_title": "Generous Heart House",
+    "house_text": "We dream of creating a warm, accessible and lively centre for persons with disabilities in Karaganda — a place to meet, learn, exercise, make friends and develop abilities.",
+    "help_title": "Become part of a good cause",
+    "help_text": "Your support helps Jomart Jurek organise activities, assist persons with disabilities and move closer to creating the Generous Heart House.",
+    "contacts_title": "Contact us",
+    "contacts_text": "We are open to communication, cooperation and kind initiatives. Every message matters to us."
+  }
+}
